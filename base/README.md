@@ -1,18 +1,14 @@
 
-# MIDS w205 base docker image
+# Base docker image
 
-We're using this a bunch for class.
+Forked from midsw205/docker-images. Key changes:
 
-They get pushed manually up to <https://hub.docker.com/u/midsw205/>.
+1) Updated to ubuntu focal. 
+2) Installed cassandra python driver. 
+
+Image gets pushed to  <https://hub.docker.com/u/atox120/>.
+
 
 
 # Misc Notes
-
 https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
-
-
-# TODO
-
-- open this up
-- turn it into an automated build project in dockerhub
-
