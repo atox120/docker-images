@@ -1,8 +1,6 @@
 
-# MIDS w205 docker images
+# Repository of Docker Images
 
-We're using these for class.
+Images pushed to <https://hub.docker.com/u/atox120/>.
 
-For now, they get manually pushed up to <https://hub.docker.com/u/midsw205/>.
-
-
+Forked from MIDS w205 https://github.com/mids-w205-fund-of-data-eng/docker-images @ <https://hub.docker.com/u/midsw205/>.
