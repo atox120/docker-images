@@ -2,7 +2,7 @@ default: version list
 
 NAMESPACE=atox120
 IMAGE=$(shell basename $(PWD))
-VERSION=0.0.1
+VERSION=0.1.1
 
 version: show-version
 show-version:
