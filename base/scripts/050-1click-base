@@ -35,7 +35,6 @@ apt-get install -y --no-install-recommends \
     liblapack-dev \
     libmysqlclient-dev \
     libpq-dev \
-    libreadline6 \
     libreadline6-dev \
     libsqlite3-dev \
     libssl-dev \
