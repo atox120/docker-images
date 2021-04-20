@@ -1,5 +1,6 @@
 FROM ubuntu:focal
-MAINTAINER Alexander To <alexander.to@berkeley.edu>
+MAINTAINER Alexander To <alexander.to@berkeley.edu> 
+## Based off original image from Mark Mims Mark Mims <mark.mims@gmail.com>
 
 ENV SHELL /bin/bash
 ENV NB_USER science
