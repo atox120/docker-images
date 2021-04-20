@@ -1,10 +1,10 @@
-FROM ubuntu:xenial
-MAINTAINER Mark Mims <mark.mims@gmail.com>
+FROM ubuntu:focal
+MAINTAINER Alexander To <alexander.to@berkeley.edu>
 
 ENV SHELL /bin/bash
 ENV NB_USER science
 ENV NB_UID 1000
-ENV HOME /w205
+ENV HOME /base
 
 ENV DEBIAN_FRONTEND=non-interactive
 ENV LC_ALL=C
@@ -14,7 +14,7 @@ ENV LC_CTYPE=en_US.UTF-8
 ## expose ports for jupyter notebook
 EXPOSE 8888
 
-VOLUME /w205
+VOLUME /base
 
 COPY policy-rc.d /usr/sbin
 COPY scripts/* /tmp/
