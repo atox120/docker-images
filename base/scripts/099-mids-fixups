@@ -6,4 +6,5 @@ pip3 install \
 
 pip install \
     kafka-python \
-    flask
+    flask \
+    cassandra-driver
