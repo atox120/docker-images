@@ -19,7 +19,6 @@ apt-get install -y \
     python3-pip \
     python3.8 \
     python3-dev \
-    python3-virtualenv
 
 apt-get autoremove -y 
 apt-get clean
@@ -54,7 +53,8 @@ pip3 install \
     sqlalchemy \
     statsmodels \
     sympy \
-    textblob
+    textblob \
+    venv
 
 apt-get -qqy clean
 rm -rf /var/lib/apt/lists/*
