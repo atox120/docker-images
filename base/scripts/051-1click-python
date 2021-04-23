@@ -16,9 +16,9 @@ apt-get update
 apt-get upgrade -y
 apt-get install -y \
     aria2 \
-    python3-pip \
     python3.8 \
-    python3-dev \
+    python3-dev #\
+    #python3-pip \ - already installed.
 
 apt-get autoremove -y 
 apt-get clean
