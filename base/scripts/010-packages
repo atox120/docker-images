@@ -5,11 +5,11 @@
 ##
 pkgs=(apt-transport-https
       jq
+      vim
       ca-certificates
       python-letsencrypt
       linux-image-extra-virtual
-      python-pip
-      python-virtualenv
+      python3-pip
       lighttpd
 )
 
