@@ -7,7 +7,6 @@ pkgs=(apt-transport-https
       jq
       vim
       ca-certificates
-      python-letsencrypt
       linux-image-extra-virtual
       python3-pip
       lighttpd
