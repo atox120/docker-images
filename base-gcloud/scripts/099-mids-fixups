@@ -1,8 +1,0 @@
-#!/bin/bash
-
-pip3 install \
-    redis \
-    kafka-python \
-    flask \
-    cassandra-driver
-
