@@ -35,11 +35,8 @@ apt-get clean
 pip3 install \
     beautifulsoup4 \
     bokeh \
-    cassandra-driver \
-    flask \
     jupyter \
     jupyterhub \
-    kafka-python \
     jupyterlab \
     matplotlib \
     networkx \
@@ -48,7 +45,6 @@ pip3 install \
     numpy \
     pandas \
     pyzmq \
-    redis
     requests \
     scikit-image \
     scikit-learn \

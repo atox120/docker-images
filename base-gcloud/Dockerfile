@@ -23,6 +23,9 @@ COPY scripts/* /tmp/
 RUN bash /tmp/010-packages
 RUN bash /tmp/050-1click-base
 RUN bash /tmp/051-1click-python
-## RUN bash /tmp/071-gcloud-sdk
+RUN bash /tmp/071-gcloud-sdk
+RUN bash /tmp/099-mids-fixups
+
+RUN apt-get -qq update && apt-get -yqq install kafkacat apache2-utils
 
 WORKDIR $HOME

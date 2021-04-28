@@ -3,16 +3,14 @@
 ################################
 ## PART: install the packages
 ##
-pkgs=(apache2-utils
-      apt-transport-https
+pkgs=(apt-transport-https
+      jq
+      vim
       ca-certificates
       certbot
-      jq
-      kafkacat
       linux-image-extra-virtual
-      lighttpd
       python3-pip
-      vim
+      lighttpd
 )
 
 apt-get -qqy update
