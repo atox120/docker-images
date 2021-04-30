@@ -48,7 +48,7 @@ pip3 install \
     numpy \
     pandas \
     pyzmq \
-    redis
+    redis \
     requests \
     scikit-image \
     scikit-learn \

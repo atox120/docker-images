@@ -16,6 +16,6 @@ pkgs=(apache2-utils
 )
 
 apt-get -qqy update
-apt-get -qqy install ${pkgs[@]}
+apt-get -y install ${pkgs[@]}
 apt-get -qqy clean
 rm -rf /var/lib/apt/lists/*
