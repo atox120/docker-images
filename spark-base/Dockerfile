@@ -29,9 +29,9 @@ RUN apt-get update \
 && rm spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION.tgz
 
 COPY *-site.xml            $SPARK_TEMPLATE_PATH/
-#COPY *.properties          $SPARK_CONF_PATH/
-COPY spark-defaults.conf   $SPARK_CONF_PATH
-#COPY spark-env.sh          $SPARK_CONF_PATH
+# COPY *.properties          $SPARK_CONF_PATH/
+# COPY spark-defaults.conf   $SPARK_CONF_PATH
+# COPY spark-env.sh          $SPARK_CONF_PATH
 
 COPY jars/* $SPARK_HOME/jars/
 

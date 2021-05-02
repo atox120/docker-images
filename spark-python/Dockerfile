@@ -1,4 +1,4 @@
-FROM atox120/spark-base:latesti
+FROM atox120/spark-base:latest
 MAINTAINER Mark Mims <mark.mims@gmail.com>, Alexander To <alexander.to@berkeley.edu>
 
 ENV ANACONDA_VERSION 2020.11
