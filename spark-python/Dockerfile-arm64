@@ -1,19 +1,18 @@
-FROM atox120/spark-base:latest
-MAINTAINER Mark Mims <mark.mims@gmail.com>, Alexander To <alexander.to@berkeley.edu>
+FROM atox120/spark-base:dev 
+MAINTAINER Alexander To <alexander.to@berkeley.edu>
 
-ENV ANACONDA_VERSION 2020.11
-ENV PY4J_VERSION     0.10.9.2
+ENV PY4J_VERSION     0.10.9
 
 WORKDIR /
 
-RUN apt-get install -y bzip2 \
-  && curl -OL http://repo.continuum.io/archive/Anaconda3-$ANACONDA_VERSION-Linux-x86_64.sh \
-  && chmod 755 Anaconda3-$ANACONDA_VERSION-Linux-x86_64.sh \
-  && /Anaconda3-$ANACONDA_VERSION-Linux-x86_64.sh -b -p /opt/anaconda3 \
-  && rm /Anaconda3-$ANACONDA_VERSION-Linux-x86_64.sh \
-  && /opt/anaconda3/bin/conda install pyarrow parquet-cpp arrow-cpp -c conda-forge
+RUN apt-get install -y wget \
+  && wget -O Miniforge3.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh \
+  && chmod 755 Miniforge3.sh \
+  && /Miniforge3.sh -b -p /opt/miniforge3 \
+  && rm /Miniforge3.sh \
+  && /opt/miniforge3/bin/conda install pyarrow parquet-cpp arrow-cpp -c conda-forge
 
-ENV PATH       /opt/anaconda3/bin:$PATH
+ENV PATH       /opt/miniforge3/bin:$PATH
 ENV PYTHONPATH $SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-$PY4J_VERSION-src.zip
 
 WORKDIR $SPARK_HOME
